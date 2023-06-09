@@ -1,4 +1,4 @@
-FROM openjdk:8-alpine
+FROM openjdk:21-ea-24-jdk-slim
 
 ENV ZOOKEEPER_VERSION 3.4.14
 ENV PATH $PATH:/opt/zookeeper/bin/
