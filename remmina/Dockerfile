@@ -8,7 +8,7 @@
 #	--name remmina \
 #	jess/remmina
 #
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210416
 LABEL maintainer "Jessie Frazelle <jess@linux.com>"
 
 RUN apt-get update && apt-get install -y \
