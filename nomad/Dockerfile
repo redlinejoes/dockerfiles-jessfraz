@@ -44,7 +44,7 @@ RUN set -x \
 		-tags "ui release" \
 		-o /usr/bin/nomad
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 COPY --from=builder /usr/bin/nomad /usr/bin/nomad
 COPY --from=builder /etc/ssl/certs/ /etc/ssl/certs
