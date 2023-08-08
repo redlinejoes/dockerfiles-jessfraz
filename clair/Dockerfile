@@ -18,7 +18,7 @@ RUN git checkout "${CLAIR_VERSION}"
 
 RUN go install ./cmd/clair
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 RUN apk --no-cache add \
 	ca-certificates \
