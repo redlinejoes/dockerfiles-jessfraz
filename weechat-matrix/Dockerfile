@@ -11,7 +11,7 @@
 # 			-v "${HOME}/.weechat:/home/user/.weechat" \
 # 			weechat-matrix
 #
-FROM alpine:latest
+FROM alpine:3.18.3
 
 RUN apk add --no-cache \
 	build-base \
