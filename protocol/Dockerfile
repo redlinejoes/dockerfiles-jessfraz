@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.18.3
 LABEL maintainer "James Abley <james.abley@gmail.com>"
 
 RUN buildDeps=' \
