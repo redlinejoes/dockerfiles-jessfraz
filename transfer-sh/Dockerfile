@@ -17,7 +17,7 @@ WORKDIR /go/src/github.com/dutchcoders/transfer.sh
 RUN GO111MODULE=on go build -o /usr/bin/transfer.sh
 
 # Create a clean image without build dependencies
-FROM alpine:latest
+FROM alpine:3.18.3
 
 COPY --from=builder /usr/bin/transfer.sh /usr/bin/transfer.sh
 COPY --from=builder /etc/ssl/certs/ /etc/ssl/certs
