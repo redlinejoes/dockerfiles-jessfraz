@@ -18,7 +18,7 @@ RUN go get github.com/pomerium/pomerium || true \
 	&& mv dist/pomerium-linux-amd64 /usr/bin/pomerium
 
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 COPY --from=builder /usr/bin/pomerium /usr/bin/pomerium
 COPY --from=builder /etc/ssl/certs/ /etc/ssl/certs
