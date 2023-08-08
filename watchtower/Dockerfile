@@ -18,7 +18,7 @@ WORKDIR /go/src/github.com/containrrr/watchtower
 
 RUN GO111MODULE=on go build -o /usr/bin/watchtower
 
-FROM alpine:latest
+FROM alpine:3.18.3
 COPY --from=builder /usr/bin/watchtower /usr/bin/watchtower
 COPY --from=builder /etc/ssl/certs/ /etc/ssl/certs
 
