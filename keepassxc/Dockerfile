@@ -8,7 +8,7 @@
 #		-e DISPLAY=unix$DISPLAY \
 #		jess/keepassxc
 #
-FROM alpine:latest
+FROM alpine:3.18.3
 LABEL maintainer "Christian Koep <christiankoep@gmail.com>"
 
 ENV KEEPASSXC_VERSION 2.5.4
