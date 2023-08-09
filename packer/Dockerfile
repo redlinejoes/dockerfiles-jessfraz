@@ -23,7 +23,7 @@ RUN git checkout "${PACKER_VERSION}"
 RUN XC_ARCH="amd64" XC_OS="linux" LD_FLAGS=" -extldflags -static" make releasebin \
 	&& mv bin/packer /usr/bin/packer
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 RUN apk add --no-cache \
 	bash \
