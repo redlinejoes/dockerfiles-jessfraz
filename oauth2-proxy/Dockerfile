@@ -17,7 +17,7 @@ RUN go get github.com/pusher/oauth2_proxy || true \
 	&& mv oauth2_proxy /usr/bin/
 
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 COPY --from=builder /usr/bin/oauth2_proxy /usr/bin/oauth2_proxy
 COPY --from=builder /etc/ssl/certs/ /etc/ssl/certs
