@@ -52,7 +52,7 @@ RUN cd ui-v2 \
 RUN TERM=xterm XC_ARCH="amd64" XC_OS="linux" LD_FLAGS=" -extldflags -static" make tools static-assets bin \
 	&& mv bin/consul /usr/bin/consul
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 COPY --from=builder /usr/bin/consul /usr/bin/consul
 COPY --from=builder /etc/ssl/certs/ /etc/ssl/certs
