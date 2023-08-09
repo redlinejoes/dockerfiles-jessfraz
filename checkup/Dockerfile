@@ -12,7 +12,7 @@ ENV GOPATH /go
 
 RUN go get github.com/sourcegraph/checkup/cmd/checkup
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 COPY --from=builder /go/bin/checkup /usr/bin/checkup
 COPY --from=builder /etc/ssl/certs/ /etc/ssl/certs
