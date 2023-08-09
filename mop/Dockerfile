@@ -16,7 +16,7 @@ ENV GOPATH /go
 
 RUN go get github.com/mop-tracker/mop/cmd/mop
 
-FROM alpine:latest
+FROM alpine:3.18.3
 COPY --from=builder /go/bin/mop /usr/bin/mop
 COPY --from=builder /etc/ssl/certs/ /etc/ssl/certs
 ENTRYPOINT [ "mop" ]
