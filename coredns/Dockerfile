@@ -19,7 +19,7 @@ WORKDIR /go/src/github.com/coredns/coredns
 RUN make all \
 	&& mv coredns /usr/bin/coredns
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 COPY --from=builder /usr/bin/coredns /usr/bin/coredns
 COPY --from=builder /etc/ssl/certs/ /etc/ssl/certs
