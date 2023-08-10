@@ -8,7 +8,7 @@
 # - /var/run/dbus, the X11 socket (typically /tmp/.X11-unix)
 # And it also requires the USER and DISPLAY environment variables to be set.
 #
-FROM alpine:latest
+FROM alpine:3.18.3
 
 RUN apk --no-cache add \
 	i3lock \
