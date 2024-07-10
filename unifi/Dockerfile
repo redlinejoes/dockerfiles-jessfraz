@@ -26,7 +26,7 @@
 # 	set-inform http://ip_of_docker_host:8080/inform
 #
 
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20201014
 
 # environment settings
 ENV DEBIAN_FRONTEND="noninteractive"
