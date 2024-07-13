@@ -10,7 +10,7 @@
 #     fghj/fontforge
 
 # Base docker image
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210416
 LABEL maintainer "Axel Svensson <foss@axelsvensson.com>"
 
 RUN  apt-get update \
