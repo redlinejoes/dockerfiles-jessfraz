@@ -12,7 +12,7 @@
 #	--name scudcloud \
 #	jess/scudcloud
 
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210416
 LABEL maintainer "Jessie Frazelle <jess@linux.com>"
 
 ENV DEBIAN_FRONTEND noninteractive
