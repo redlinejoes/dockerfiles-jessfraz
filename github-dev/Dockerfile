@@ -1,4 +1,4 @@
-FROM golang:alpine
+FROM golang:1.23rc2-alpine3.20
 MAINTAINER Jessica Frazelle <jess@linux.com>
 
 RUN	apk add --no-cache \
