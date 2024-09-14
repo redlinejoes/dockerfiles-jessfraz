@@ -7,7 +7,7 @@
 # 		-v ${HOME}/.gitsomeconfigurl:/home/anon/.gitsomeconfigurl \
 #		r.j3ss.co/gitsome
 #
-FROM python:3.12.0b1-alpine
+FROM python:3.13.0rc2-alpine
 
 RUN apk add --no-cache \
 	bash
