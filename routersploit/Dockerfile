@@ -1,4 +1,4 @@
-FROM debian:bullseye-20230502-slim
+FROM debian:bullseye-20241016-slim
 LABEL maintainer "Christian Koep <christiankoep@gmail.com>"
 
 ENV ROUTERSPLOIT_VERSION v3.4.0
