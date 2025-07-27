@@ -7,7 +7,7 @@
 # 	-v ${HOME}/.ssh:/root/.ssh:ro \
 # 	ansible all -m ping
 #
-FROM python:3-alpine
+FROM python:3.14.0rc1-alpine
 LABEL maintainer "Christian Koep <christiankoep@gmail.com>"
 
 RUN builddeps=' \
