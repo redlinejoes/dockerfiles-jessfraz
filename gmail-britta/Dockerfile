@@ -1,4 +1,4 @@
-FROM	ruby:alpine
+FROM	ruby:3.4.7-alpine3.22
 LABEL maintainer "Jessie Frazelle <jess@linux.com>"
 
 RUN apk add --no-cache \
